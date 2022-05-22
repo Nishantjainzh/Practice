@@ -1,0 +1,116 @@
+1.	we will give 3rd perameter as next and will call next() within function in middleware.
+2.	Model is like a database schema where we will put the info pertaining to the collections model name should be like collection name.
+3.	Node js default port – 8000
+4.	mongodb default port  27017
+
+                                                                JAVA SCRIPT
+1.	JavaScript is a single-threaded programming language which means only one thing can happen at a time.
+2.	Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
+3.	RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code .The library also provides utility functions for creating and working with observables.
+4.	RxJS is a library that lets us create and work with observables.
+
+5.	Injectable means Dependency injection
+
+6.	observables are simply a function that are able to give multiple values over time, either synchronously or asynchronously
+7.	An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
+8.	With Observable it doesn't matter if you want to handle 0, 1, or multiple events.
+
+9.	the main difference between a promise and an observable is that a promise emits only a single value, whereas an observable emits multiple values.
+
+10.	Interceptors allow us to intercept incoming or outgoing HTTP requests using the HttpClient.
+11.	we will generate the inceptor and it should be register in module.ts under the provider with [provide:HTTP_INTERCEPTORS,useClass:BoyInterceptor,multi:true  ]
+12.	hoisting- variables and function declarations are moved to the top of their scope before code execution - in this case function will be print but variable would become undefind.
+
+13.	var- we can declare again it and we can rewrite the value again 
+let -we can rewrite the value but we can not declare it again.
+const-neither we can declare nor rewrite value.
+14.	Closure - to use the outside function variable in the inner function and closures can be perform with local variable and global variable.
+
+15.	pipes - uppercase, lowercase ,titlecase.
+
+16.	Route Guard- need to generate Guard and service
+
+17.	@view child-USING COMPONENT -  its a decorator and it is used for component communication. if a parent component wants to use child component then we can use it. 
+18.	@view child-USING TEMPLATE VARIBALE-  its a decorator. WE will use ElementRef in it. 
+
+19.	Directives- It is use for modify the DOM and HTML Element.We will use ElementRef in it.
+Directives are classes that add additional behavior to elements in your Angular applications.
+With Angular's built-in directives, you can manage forms, lists, styles, and what users see.
+20.	Data types - <String, Number, Boolean, Array, Object, Null>
+21.	OPERATOR <AND  -  && OR  -  || AND  -  && >
+22.	BOX < alert();  prompt(); confirm();>
+23.	<console.log("")
+24.	console.warn();
+document.write();
+console.table([1,2,3])
+console.error()>
+25.	<Below console would be use togeather.>
+console.time("test")
+console.Endtime("test")
+
+26.	ARRAY METHOD <Array methods will be use with . >
+27.		var a = [ 1,2,3];
+28.		a.sort()
+29.	sort() - it will sort the array in alphabetical order or in number series order
+30.	reverse() - it will reverse the values of array 
+31.	pop() - it will delete the last value of the array
+32.	push(value) - it will add the value in the last in the array.
+33.	shift()- it will delete the first value of the array
+34.	unshift() - it will add the value in the beginning in the array.
+35.	concat() - it will add the arrays value
+36.	join()
+
+37.	New feature of ANGULAR 11
+Updated HMR
+type script 5 suppot
+webpack 5 support
+moved from Tslint to ESLint
+remove support from IE 9, 10
+38.	WEBPACK- its a bundler which put all the JS file in a single JS file. Webpack has its own server , the name is webpack-dev-server
+39.	GULP- Dist and src folder would be created
+
+40.	INTERCEPTOR- It is like a middleware
+Interceptors are a unique type of Angular Service that we can implement.
+Interceptors allow us to intercept incoming or outgoing HTTP requests using the HttpClient . 
+By intercepting the HTTP request, we can modify or change the value of the request.
+
+41.	Functions running in parallel with other functions are called asynchronous
+A good example is JavaScript setTimeout()
+
+42.	ngOnInit() is a place to put the code that we need to execute at very first as soon as the class is instantiated.
+Constructor initialize class members.
+
+43.	ActivatedRoute Contains the information about a route associated with a component loaded in an outlet. 
+It can also be used to pass data from one component to another component using route such as Id, flag, state etc.
+
+44.	SnapShot - If you don't want to update your URL parameter within the same component you are accessing it, then you can use the snapshot
+
+45.	ParamMap - A map that provides access to the required and optional parameters specific to a route. 
+46.	The map supports retrieving a single value with get() or multiple values with getAll().
+
+47.	npm init command for create the package.json
+
+48.	ExpressJS manages the workflow between the front-end and the database and facilitates a smooth and secure transfer of data
+
+49.	Angular gives us 8 hooks to allow us to tap into the lifecycle of our components and trigger actions at specific points in the lifecycle.
+
+ngOnChanges ngOnInit  ngDoCheck   ngAfterContentInit  ngAfterContentChecked ngAfterViewInit ngAfterViewChecked  ngOnDestroy.
+50.	Decorators are functions that allow a service, directive or filter to be modified prior to its usage
+It adds additional metadata information like the template, selector name, styles etc.
+51.	CORS allows servers to specify who (i.e., which origins) can access the assets on the server, among many other things.
+
+52.	Concurrency - Concurrency is the concept of executing two or more tasks at the same time. We can handle it with events and callback in node js.
+
+53.	ng-template is an Angular element used to render HTML templates. We use ng-template with angular *ngIf directive to display else template.
+
+54.	Two way binding get implemented with [(ngModel)]
+When we need to display and update the same data then we used to two way binding
+
+
+
+
+
+
+
+
+
