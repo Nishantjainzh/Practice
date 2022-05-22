@@ -1,0 +1,6 @@
+Add event listner - it used for set the multiple events on tags, id , class etc.
+Host listner 
+parent to child
+event binding
+property binding
+query selector
