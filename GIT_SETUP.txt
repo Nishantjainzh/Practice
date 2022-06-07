@@ -1,0 +1,41 @@
+how to upload a project on github
+C:\Users\lenovo>.
+git config --global user.name "nishantjainzh"
+git config --global user.email "nishantjainzh@gmail.com"
+
+Then go to your project directory - C:\xampp\htdocs\laravel>
+C:\xampp\htdocs\laravel>
+git init 
+git add .
+git commit -m "MEAN STACK Front PROJECT"
+git remote add origin https://github.com/Nishantjainzh/Product.git (you can take this command 
+from the created repositary document)
+git push -u origin master
+after this above command it will ask the GitHub user name and password 
+
+
+============================================================================
+			GIT COMMANDS
+============================================================================
+git status
+git add . OR git add path/to/file with file name(if only specific file need to add) 
+git commit -m " your comment " 
+git push -u origin <branch name where code need to push>
+
+git checkout path/to/file with file name (for revert the changes in specific file)
+git checkout . (for revert the all changes)
+
+Create a new branch- git checkout -b <branch-name>
+
+To restore a file - git restore --staged <file>
+
+If you want to revert the code of red files(git status) till last commit - git checkout .
+	if any specific file then - git checkout <file path>
+
+-> Recover the file code
+git checkout < File Name >
+
+-> Recover the all files code
+git checkout -f
+
+

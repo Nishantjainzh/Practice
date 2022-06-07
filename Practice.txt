@@ -4,3 +4,26 @@ parent to child
 event binding
 property binding
 query selector
+
+$gte and $gt
+getter and setter method
+blur event in angular
+searchFilter["age"] means is searchFilter.age
+hostListener - method decorator
+hostListener can be implemented on all elements/tags.
+
+
+hostlistener
+input
+output
+property binding
+$event binding
+disabled boolean
+style binding
+2way binding
+req.query - api?applicationNo=1234567890&status=1
+req.params - api/:key
+req.body - req.body.applicationNo
+puppeteer module is used for creating the pdf
+: void - the void keyword specifies that the function doesn't return a value.
+contrllet set up for node
