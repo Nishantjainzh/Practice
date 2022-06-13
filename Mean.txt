@@ -1,5 +1,5 @@
 1.	we will give 3rd perameter as next and will call next() within function in middleware.
-2.	Model is like a database schema where we will put the info pertaining to the collections model name should be like collection name.
+2.	Model is like a database schema where we will put the info pertaining to the collections,  model name should be like collection name.
 3.	Node js default port – 8000
 4.	mongodb default port  27017
 
