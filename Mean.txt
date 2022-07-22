@@ -1,4 +1,8 @@
-1.	we will give 3rd perameter as next and will call next() within function in middleware.
+1.	Middleware handle the different route of webpages and it work between the request and response cycle.
+	Middleware gets executed after the server receives the request and it has the access to the request object, responses object, and next
+	we will give 3rd perameter as next and will call next() within function in middleware.
+	These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers, etc.
+
 2.	Model is like a database schema where we will put the info pertaining to the collections,  model name should be like collection name.
 3.	Node js default port – 8000
 4.	mongodb default port  27017
@@ -34,8 +38,8 @@ const-neither we can declare nor rewrite value.
 18.	@view child-USING TEMPLATE VARIBALE-  its a decorator. WE will use ElementRef in it. 
 
 19.	Directives- It is use for modify the DOM and HTML Element.We will use ElementRef in it.
-Directives are classes that add additional behavior to elements in your Angular applications.
-With Angular's built-in directives, you can manage forms, lists, styles, and what users see.
+	Directives are classes that add additional behavior to elements in your Angular applications.
+	With Angular's built-in directives, you can manage forms, lists, styles, and what users see.
 20.	Data types - <String, Number, Boolean, Array, Object, Null>
 21.	OPERATOR <AND  -  && OR  -  ||>
 22.	BOX < alert();  prompt(); confirm();>
@@ -78,7 +82,7 @@ By intercepting the HTTP request, we can modify or change the value of the reque
 A good example is JavaScript setTimeout()
 
 42.	ngOnInit() is a place to put the code that we need to execute at very first as soon as the class is instantiated.
-Constructor initialize class members.
+	Constructor initialize class members.
 
 43.	ActivatedRoute Contains the information about a route associated with a component loaded in an outlet. 
 It can also be used to pass data from one component to another component using route such as Id, flag, state etc.
@@ -104,7 +108,7 @@ It adds additional metadata information like the template, selector name, styles
 53.	ng-template is an Angular element used to render HTML templates. We use ng-template with angular *ngIf directive to display else template.
 
 54.	Two way binding get implemented with [(ngModel)]
-When we need to display and update the same data then we used to two way binding
+	When we need to display and update the same data then we used to two way binding
 
 55.	Mongoose, you can define objects with a strongly-typed schema that can be further mapped to a MongoDB document.
 Mongoose comes with built-in typecasting, validation, query building, business logic hooks, and many more out-of-the-box features.
@@ -155,6 +159,31 @@ _.keys()- method is used to return the list of all keys of the given object.
 	unlinkSync() - for deleting a file 
 	readdir() - for reading the file name under a directory
 
+72. <router-outlet></router-outlet> - for loading the component
+
+73. Using NgRx store you can create your store, effects , reducers & actions in any angular app. 
+On the other hand RxJS is used for mainly for consuming api data and creating shared services using subject etc.
+The RxJS library is great for handling async tasks. 
+It has a large collection of operators in filtering, error handling, conditional, creation, multicasting, and more. It is supported by JavaScript and TypeScript, and it works well with Angular.
+
+74. Promises are used to handle asynchronous operations in JavaScript.
+They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+75. let have the block scope under { }
+
+76. Template literal means back tick with ${}
+
+77. EventEmitter is a module that helps share data between components using emit() and subscribe() methods.
+
+78. Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed.
+It helps us develop asynchronous JavaScript code and keeps us safe from problems and errors
+
+
+
+
+
+
+
 ==========================
 NODE JS MODULE COMPLETE
 ==========================
@@ -175,6 +204,8 @@ validator
 
 
 
+
+
 ================================
 Topics need to cover
 
@@ -189,7 +220,6 @@ timer module
 save and insert difference in mongo
 arrow function
 
-=================================
 
 
 
