@@ -39,8 +39,86 @@ class Employee{
         console.log('display method');
     }
 }
-let emp = new Employee();
+let empp = new Employee();
 emp.getemployee();
 Employee.display();
-console.log(emp.name);
+console.log(empp.name);
+
+const arr = [1,29, 2, 3,46, 5, 6, 7];
+
+// includes method
+const include = arr.includes(4)
+console.log('includes method',include);
+
+// filter the condition
+const filter = arr.find(x=> x === 2)
+console.log('filter the condition',filter);
+
+// map function is used for transform the array and it will be apply on each element of the array
+const map = arr.map(num => num * 2 )
+console.log('Map function ', map); 
+
+// reduce method
+const reduce = arr.reduce((x, y) => x + y);
+console.log('reduce value ', reduce);
+
+// some method for check the condition
+const some = arr.some(x => x > 5);
+console.log('some method ', some);
+
+// every method
+const every = arr.every(x => x < 59);
+console.log('Every ', every);
+
+// sort method will sort by default in ascending order
+const Dsort = arr.sort((a, b)=> a>b? -1:1 );
+console.log('Descending ',Dsort);
+
+const Asort = arr.sort((a,b) => a > b? 1: -1);
+console.log('Aescending ',Asort);
+
+// array from method - it convert the string in an array
+const afrom = [
+    'n', 'i', 's', 'h',
+    'a', 'n', 't', ' ',
+    'j', 'a', 'i', 'n'
+  ]
+const resultData = Array.from(afrom);
+console.log(resultData);
+
+
+Array.prototype.ucase = function(){
+    for(let i=0; i< this.length; i++){
+        this[i] = this[i].toUpperCase();
+    }
+}
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.ucase();
+console.log(fruits);
+
+// join method
+const starray = 'lenovo laptop';
+const resul = Array.from(starray);
+
+console.log(resul);
+console.log(resul.join(' * '));
+console.log(fruits.toString());
+
+const a = function(message){
+    console.log(message + this.name);
+}
+
+const obj = { name:"nishant"}
+const valu = a.bind(obj, 'leno')
+valu()
+
+var emp = { name: "nishant", localtion: "delhi"}
+var employee = emp
+//console.log(employee);
+employee.name = 'rite';
+console.log(emp);
+console.log(employee);
+
+
+
 

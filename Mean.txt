@@ -1,4 +1,5 @@
-1.	Middleware handle the different route of webpages and it work between the request and response cycle.
+1.	If you want to modify or filter the request and response  then we will use middleware
+	Middleware handle the different route of webpages and it work between the request and response cycle.
 	Middleware gets executed after the server receives the request and it has the access to the request object, responses object, and next
 	we will give 3rd perameter as next and will call next() within function in middleware.
 	These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers, etc.
@@ -25,7 +26,7 @@
 11.	we will generate the inceptor and it should be register in module.ts under the provider with [provide:HTTP_INTERCEPTORS,useClass:BoyInterceptor,multi:true  ]
 12.	hoisting- variables and function declarations are moved to the top of their scope before code execution - in this case function will be print but variable would become undefind.
 
-13.	var- we can declare again it and we can rewrite the value again 
+13.	var- we can declare it again and we can rewrite the value again 
 let -we can rewrite the value but we can not declare it again.
 const-neither we can declare nor rewrite value.
 14.	Closure - to use the outside function variable in the inner function and closures can be perform with local variable and global variable.
@@ -177,6 +178,26 @@ They are easy to manage when dealing with multiple asynchronous operations where
 
 78. Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed.
 It helps us develop asynchronous JavaScript code and keeps us safe from problems and errors
+
+79. Union types - multiple data types assigned to a variable with pipe in typescript
+let data:string|number|boolean = "Peter"
+
+80. Void - if any function do not return any valye then we use the void like function test() :void { }
+
+81. Modules in TS - If we create classes with same name then it will not give error if we use modules. we have to do 'export default' in ts file.
+ all variables, classes, functions, etc. that are declared in a module are not accessible outside the module. Modules are a way to create a local scope in the file.
+
+82. Generics -
+function returnInput <Type>(arg: Type): Type {
+  return arg;
+};
+const returnInputStr = returnInput<string>('Foo Bar');
+const returnInputNum = returnInput<number>(5);
+
+console.log(returnInputStr); // Foo Bar
+console.log(returnInputNum); // 5
+
+83. 
 
 
 
