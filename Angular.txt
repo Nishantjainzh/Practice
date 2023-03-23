@@ -1,0 +1,193 @@
+1. Auth Gaurd - It allow us to control the accessibility of a route, based on condition provided in class implementation.
+CanActivate.
+CanActivateChild.
+CanDeactivate.
+Resolve.
+CanLoad
+
+2. Data binding is the synchronization between the model and the view.
+Angular uses the two-way binding. Any changes made to the user interface are reflected in the corresponding model state.
+
+3. Directives are classes that add additional behavior to elements in your Angular applications.
+component Directive =======>@Component. It contains the details on component processing
+Attribute Directive -=======>
+NgClass	 - Add and removes a set of CSS classes
+NgModel-  Add two-way data binding to an HTML form elementNgStyle	
+NgStyle - Add and removes a set of HTML styles.
+structural Directive -=======> ngIf, ngFor, ngSwitch
+
+4. Decorators are design patterns used to modification or decoration of a class without modifying the source code
+Class decorators, such as @Component and @NgModule
+Property decorators for properties inside classeÚ, such as @Input and @Output
+Method decorators for methods inside classes, such as @HostListener
+Parameter decorators for parameters inside class constructors, such as @Inject
+
+5. The Ahead-of-time (AOT) compiler converts the Angular HTML and TypeScript code into JavaScript code during the build phase
+(JIT) Just in time - it throw the error on run time.
+
+6. The key difference between sessions and cookies is that sessions are saved on the server side while cookies are saved on the client side. 
+Cookies are small text files used to store user information on the user's computer. 
+Sessions are used to store user information on the user's server side.
+Sessions are safer than cookies
+
+7. ngonchanges - we use ngOnChanges whenever we want to detect changes from a variable decorated by @Input.
+Remember that only changes from the parent component will trigger this function.
+Also remember that changes from the parent still update the child value even without implementing ngOnChanges.
+
+8. The Constructor is a default method of the class that is executed when the class is instantiated but ngOnInit is a life cycle hook.
+constructor initialize class member and its subclasses.
+
+9. Lazy loading load JavaScript components asynchronously when a specific route is activated.
+This can improve your application's performance and reduce the initial bundle size
+
+10. Thru the forkjoin we can call multiple api in angular.
+
+11. Dependency injection allows classes with Components, Directives, Pipes, and Injectables to configure dependencies;
+
+12. We use ng-template with angular *ngIf directive to display else template.
+ng-template is a virtual element and its contents are displayed only when needed based on conditions.
+
+13. ReplaySubject keeps a cache of previous values emitted by a source observable and sends them to all new observers immediately on subscription
+We use ReplaySubject when we need more than the last given value.
+
+14. Pure pipes execute when it detects a pure change in the input value like string, number, object. pure=true
+    Impure pipes execute when it detects an impure change in the input value. Ex: adding an element in array  pure=false
+    
+15. Async Pipe - It subscribes to an observable or a promise and returns the last emitted value.
+
+16. Undefined means the variable has been declared, but its value has not been assigned
+    Null means empty value and the type of null is object.
+
+17. Observables are simply a function that are able to give multiple values over time, either synchronously or asynchronously
+	An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
+	With Observable it doesn't matter if you want to handle 0, 1, or multiple events.
+
+18. the main difference between a promise and an observable is that a promise emits only a single value, whereas an observable emits multiple values.
+
+19. Interceptors allow us to intercept incoming or outgoing HTTP requests using the HttpClient.
+	we will generate the inceptor and it should be register in module.ts under the provider with [provide:HTTP_INTERCEPTORS,useClass:BoyInterceptor,multi:true  ]
+
+20. Hoisting- variables and function declarations are moved to the top of their scope before code execution - in this case function will be print but variable would become undefind.
+
+21. var- we can declare it again and we can rewrite the value again 
+    let -we can rewrite the value but we can not declare it again.
+    const-neither we can declare nor rewrite value.
+
+22. Closure - to use the outside function variable in the inner function and closures can be perform with local variable and global variable.
+
+23.	Inbuilt pipes - uppercase, lowercase ,titlecase.
+
+24. @view child-USING COMPONENT -  its a decorator and it is used for component communication. if a parent component wants to use child component then we can use it. 
+	@view child-USING TEMPLATE VARIBALE-  its a decorator. WE will use ElementRef in it. 
+
+25. <Below console would be use together.>
+console.time("test")
+console.Endtime("test")
+
+26.	ARRAY METHOD <Array methods will be use with . >
+sort() - it will sort the array in alphabetical order or in number series order
+reverse() - it will reverse the values of array 
+pop() - it will delete the last value of the array
+push(value) - it will add the value in the last in the array.
+shift()- it will delete the first value of the array
+unshift() - it will add the value in the beginning in the array.
+concat() - it will add the arrays value
+join()
+
+27. New feature of ANGULAR 11
+Updated HMR
+type script 5 suppot
+webpack 5 support
+moved from Tslint to ESLint
+remove support from IE 9, 10
+
+28. WEBPACK- its a bundler which put all the JS file in a single JS file. Webpack has its own server , the name is webpack-dev-server
+    GULP- Dist and src folder would be created.
+
+29. Functions running in parallel with other functions are called asynchronous
+A good example is JavaScript setTimeout()
+
+30. ngOnInit() is a place to put the code that we need to execute at very first as soon as the class is instantiated.
+	Constructor initialize class members.
+
+31. SnapShot - If you don't want to update your URL parameter within the same component you are accessing it, then you can use the snapshot
+
+32. npm init command for create the package.json
+
+33. Angular gives us 8 hooks to allow us to tap into the lifecycle of our components and trigger actions at specific points in the lifecycle.
+ngOnChanges ngOnInit  ngDoCheck   ngAfterContentInit  ngAfterContentChecked ngAfterViewInit ngAfterViewChecked  ngOnDestroy.
+
+34. Two way binding get implemented with [(ngModel)]
+	When we need to display and update the same data then we used to two way binding
+
+35. <router-outlet></router-outlet> - for loading the dynamic data in component
+
+36. Using NgRx store you can create your store, effects , reducers & actions in any angular app. 
+On the other hand RxJS is used for mainly for consuming api data and creating shared services using subject etc.
+
+37. EventEmitter is a module that helps share data between components using emit() and subscribe() methods.
+
+38. Union types - multiple data types assigned to a variable with pipe in typescript
+let data:string|number|boolean = "Peter"
+
+39. Void - if any function do not return any valye then we use the void like function test() :void { }
+
+40. In Subject, the subscribers will only receive the upcoming value. 
+In BehaviorSubject, the subscribers will receive the previous value and also upcoming value
+
+
+
+Join $lookup
+Event handling in node js
+view encapsulation
+ng templete
+ng-container
+linked-list DSA
+how to chain multiple promise in node js
+what is promise.all
+event bubling
+event deligation
+angular latest version features
+microtask and macrotask in node js
+webapi in node js
+RXJS operator switch map
+RXJS concat map 
+transfer data between component
+lazy loading
+how to find duplicate records from database
+
+$gte and $gt
+getter and setter method
+blur event in angular
+searchFilter["age"] means is searchFilter.age
+hostListener - method decorator
+hostListener can be implemented on all elements/tags.
+
+
+hostlistener
+input
+output
+property binding
+$event binding
+disabled boolean
+style binding
+2way binding
+
+
+================================
+Topics need to cover
+
+logger
+bubble evnt
+spread rest opertor
+higher orders function
+templat literal 
+object restruture
+map
+timer module
+save and insert difference in mongo
+arrow function
+
+
+
+

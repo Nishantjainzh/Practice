@@ -1,0 +1,66 @@
+1. Deep copy( to copy a object under a object) and shawallo copy (to copy a object) - in object info will be pass thru reference and in variable the info will be pass thru value.
+
+2.A lexical scope in JavaScript means that a variable defined outside a function can be accessible inside another function.
+But the opposite is not true; the variables defined inside a function will not be accessible outside that function.
+
+3.Arrow function does not have this. but normal function have own this.
+
+4. JSON.parse(), it gives a JavaScript object.
+
+5.Rest operator used the 3dots before variable and it returns the array.
+
+6.call() method allows an object to use the method (function) of another object.
+call() method takes arguments separately whereas, apply() method takes arguments as an array.
+bind() method returns a new function, where the value of “this” keyword will be bound to the owner object, which is provided as a parameter.
+
+7.Closures is an ability to remember the variables and functions that are declared in its outer scope.
+
+8.Prototype: All JavaScript objects inherit properties and methods from a prototype.
+Date objects inherit from Date.prototype
+Array objects inherit from Array.prototype
+Person objects inherit from Person.prototype
+The Object.prototype is on the top of the prototype inheritance chain:
+
+9. Promise.all([...]) execute asynchronous operations in parallel, using a fail-fast strategy, and aggregate the results into an array.
+
+10. avaScript is a single-threaded programming language which means only one thing can happen at a time.
+	Using asynchronous JavaScript (such as callbacks, promises, and async/await), you can perform long network requests without blocking the main thread.
+
+11. RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code .The library also provides utility functions for creating and working with observables.
+	RxJS is a library that lets us create and work with observables.
+
+12. Variables created without a declaration keyword (var, let, or const) are always global, 
+even if they are created inside a function.
+
+13. then() method is used to access the result when the promise is fulfilled.
+catch() method is used to access the result/error when the promise is rejected.
+reduce() method takes a callback function with two parameters (accumulator, currentValue) as arguments
+
+14. pipe() to make a chain of operators ( filter(map( scan()))
+	.map() method execute and apply on each element of the array.
+	Tap() does not modify the source observable in any way
+
+15. forEach() method executes a callback function on each of the elements in an array in order.
+
+16.	filter() this methods return the true and false as per the condition.
+
+17. Rest parameter is used in function declaration whereas the spread operator is used in function calls.
+
+18. lodash library - 
+_.concat() - it add the values in existing array.
+_.find() - it find the specific object
+_.intersection() -it find the common elements between two arrays.
+_.isObject() - method is used to find whether the given value is an object or not. It gives true and false.
+_.keys()- method is used to return the list of all keys of the given object.
+
+19. ==> Build Creation
+ We need to install the typescript (npm install -g typescript)
+ then need to generate tsconfig.json file by (tsc --init) and put the "outDir": "dist"} under compilerOptions 
+ then and put the {"build": "tsc"} under scripts in package.json file
+ and run the build command - npm run build
+
+ 20. let have the block scope under { }
+
+ 21. Template literal means back tick with ${}
+
+ 22. 

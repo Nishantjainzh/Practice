@@ -1,0 +1,191 @@
+1. There are 3 types of method in JS oop
+	constructer - we need to create object of class and this constructer function will be call automatically.
+	prototype - we need to define the name of function and need to create object of class for calling the function.
+	static - No need to create object for calling static function. we need to add static before the function name.
+
+2. Inheritance- Means to use the method and properties of existing class.
+	To create a class inheritance, use the extends keyword.
+The super() method refers to the parent class.
+By calling the super() method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.
+
+3. A callback function is a function passed as an arugument in another function.
+
+4. Prototypes are the mechanism by which JavaScript objects inherit features from one another.All JavaScript objects inherit properties and methods from a prototype.
+
+5. Node. js itself is multithreaded and provides hidden threads through the libuv library.
+
+6. ExpressJS manages the workflow between the front-end and the database and facilitates a smooth and secure transfer of data
+
+7. Concurrency - Concurrency is the concept of executing two or more tasks at the same time. We can handle it with events and callback in node js.
+
+8. Add items of array:-
+let valuearr = [ 4,5,65,4, 1,2,3 ,1,2,2,3]
+
+const result = valuearr.reduce((x, y)=> return x+y);
+console.log(result);
+
+9. find unique value in array:-
+const newresult = new Set(valuearr);
+console.log([...newresult]);
+
+10. Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+It is calling itself inside the function. Working of recursion in JavaScript. A recursive function must have a condition to stop calling itself.
+
+11. Event loop -The event loop is a constantly running process that monitors both the callback queue and the call stack. 
+If the call stack is not empty, the event loop waits until it is empty and place the next function from the callback queue to the call stack.
+Event Loop has one simple job — to monitor that is there any task to handle.
+
+12. Nodejs - it's a runtime environment that's used to run JavaScript outside the browser.Node. js is non blocking environment.
+ Node. js is a server-side scripting language based on the Google Chrome V8 engine.
+Primarily we use for non-blocking, event-driven servers.
+
+13. Event-driven programming the occurrence of multiple events and to make the program as simple as possible. 
+The basic components of an Event-Driven Program are: A callback function ( called an event handler) is called when an event is triggered.
+
+14. Disadvantage Node js-
+Reduces performance when handling Heavy Computing Tasks.
+Node.js invites a lot of code changes due to Unstable API.
+Node.js Asynchronous Programming Model makes it difficult to maintain code.
+
+15. Java script ES6
+java Script Arrow function ()=>{}
+IIFE (function(){})()	Immidiate Invoked function
+JavaScript Destructuring - Destructuring comes in handy when a function returns an array
+rest operator and spread operator
+
+16. allSettled() can be use instead of Promise all.
+
+17. Middleware:- If you want to modify or filter the request and response  then we will use middleware
+	Middleware handle the different route of webpages and it work between the request and response cycle.
+	we will give 3rd perameter as next and will call next() within function in middleware.
+	These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers, etc.
+
+18. What is Drawbacks of Nodejs:-
+Whenever a heavy request comes to the event loop, Node. js would set all the CPU available to process it first,
+and then answer other requests queued. That results in slow processing and overall delay in the event loop,
+which is why Node. js is not recommended for heavy computation.
+
+19. ==> Build Creation
+ We need to install the typescript (npm install -g typescript)
+ then need to generate tsconfig.json file by (tsc --init) and put the "outDir": "dist"} under compilerOptions 
+ then and put the {"build": "tsc"} under scripts in package.json file
+ and run the build command - npm run build
+
+20. Blocking refers to operations that block further execution until that operation finishes while non-blocking refers to code that doesn't block execution
+A non-blocking call in JavaScript provides a callback function that is to be called when the operation is complete
+
+Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. 
+This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.
+Blocking methods execute synchronously and non-blocking methods execute asynchronously.
+
+const fs = require('fs');
+const data = fs.readFileSync('/file.md'); // blocks here until file is read
+
+const fs = require('fs');
+fs.readFile('/file.md', (err, data) => {
+  if (err) throw err;
+});
+
+21. Web worker is being use for multiple threads.
+
+22. Child process -  to perform more than one function simultaneously so we need child process.
+there are 4 child process.
+spawn() method - exit, disconnect, error, close and message
+fork() method
+exec() method
+execFile() method
+
+23. Node js default port – 8000
+
+24. FS Module
+	writeFileSync() - for creating a file
+	unlinkSync() - for deleting a file 
+	readdir() - for reading the file name under a directory
+
+25. Promises are used to handle asynchronous operations in JavaScript.
+They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+26. Union types - multiple data types assigned to a variable with pipe in typescript
+let data:string|number|boolean = "Peter"
+
+27. Middleware has access of request and response and the next middleware function in the application's request-response cycle.
+ It acts like the connective tissue between applications, data, and users.
+
+28. req.query - api?applicationNo=1234567890&status=1
+req.params - api/:key
+req.body - req.body.applicationNo
+
+29. The key difference between sessions and cookies is that sessions are saved on the server side while cookies are saved on the client side. 
+Cookies are small text files used to store user information on the user's computer. 
+Sessions are used to store user information on the user's server side.
+Sessions are safer than cookies.
+
+==========================
+NODE JS MODULE COMPLETE
+==========================
+Pupeteer - It is used for create the pdf
+handlebars - It is used for render web pages to the client side from data on the server-side
+FS module- For file read, create, update, delete.
+path - this is inbuilt function of express for making the folder and file path
+Ejs - it help us to create HTML in node js,: We need to create views folder and save the html file with .ejs extension.
+app.set('view engine', 'ejs')
+uuid - thru this package we can generate the id, order id.
+bcryptjs - for bcrypt the password
+jsonwebtoken - for creating the token
+crypto - built in - for creating the string in hex format
+dotenv
+mongoose
+validator
+
+========================================================
+                    MONGO DB
+========================================================
+
+1.Replication can be simply understood as the duplication of the data-set whereas sharding is partitioning the data-set into discrete parts. 
+The set of servers that maintain the same copy of data is known as replica servers or MongoDB instances.
+
+2. Why we use mongoDB:-
+MongoDB makes it easy for developers to store structured or unstructured data.
+mongoDB has a cloud database
+MongoDB is a document-oriented database which stores data in JSON-like documents with dynamic schema
+MongoDB Atlas is the leading global cloud database service for modern applications.
+
+3. What Are the Drawbacks of MongoDB?
+It doesn't support transactions.
+It lacks triggers, something that makes life easier in relational database management systems (RDBMS)
+MongoDB requires more storage than other well-known databases.
+
+4.TTL (Time-To-Live) indexes are special single-field indexes that MongoDB can use to automatically remove documents from a collection after a certain amount of time.
+It removes expired documents from the collection.
+
+5.MongoDB is not a relational database, but you can perform a left outer join by using the $lookup stage.
+
+6. Capped collections - we can not delete doucment from a capped collection. if this collection will take new insertion then oldest document will be deleted.
+it restriced the updates in the collection.
+{capped:true,size:10000}
+
+7. By sharding, you divided your collection into different parts.
+Sharding is a method for allocating data across multiple machines. MongoDB used sharding to help deployment with very big data.
+By sharding, you combine more devices to carry data extension and the needs of read and write operations.
+
+8. Model is like a database schema where we will put the info pertaining to the collections,  model name should be like collection name.
+	
+9. mongodb default port  27017
+
+10. $in operator selects the documents where the value of a field equals any value in the specified array
+{ createDate: { $in: [<value1>, <value2>, ... <valueN> ] } }
+
+11. const result = await PayDetail.aggregate([{
+    $lookup:{
+        from:'paymentAuditDetails',
+        localField:'message',
+        foreignField:'paymentTxnId',
+        as:'Test'
+    }
+}]);
+
+12. const records = await PayDetail.aggregate([
+        {$match: {status:"Success", applicationNumber:{$in:req.body.applicationNumber}, agree:true}},
+        {$sort:{createdDate: -1}},
+        {$group:{_id: "$_id", "data":{"$first":"$$ROOT"}}}
+    ])
