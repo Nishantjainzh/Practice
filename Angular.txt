@@ -133,7 +133,11 @@ let data:string|number|boolean = "Peter"
 39. Void - if any function do not return any valye then we use the void like function test() :void { }
 
 40. In Subject, the subscribers will only receive the upcoming value. 
-In BehaviorSubject, the subscribers will receive the previous value and also upcoming value
+In BehaviorSubject, the subscribers will receive the previous value and also upcoming value.
+
+41. Transpiling is one of the process to convert the typescript into javascript.
+
+42. A component's styles can be encapsulated within the component's host element so that they don't affect the rest of the application. 
 
 
 
